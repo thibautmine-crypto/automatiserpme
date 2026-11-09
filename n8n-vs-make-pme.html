@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>n8n vs Make pour une PME : lequel choisir en 2026 ? (comparatif honnête)</title>
+<meta name="description" content="Comparatif n8n vs Make pour une PME : prix réels, modèle de facturation (crédits vs exécutions), RGPD, prise en main. Le guide neutre pour choisir en 2026.">
+<link rel="canonical" href="https://automatiserpme.vercel.app/n8n-vs-make-pme.html">
+<meta property="og:title" content="n8n vs Make pour une PME : lequel choisir en 2026 ?">
+<meta property="og:description" content="Prix réels, facturation, RGPD, prise en main. Le verdict par profil de PME.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://automatiserpme.vercel.app/n8n-vs-make-pme.html">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"n8n vs Make pour une PME : lequel choisir en 2026 ?",
+  "description":"Comparatif n8n vs Make pour une PME : prix réels, modèle de facturation, RGPD, prise en main.",
+  "datePublished":"2026-11-09",
+  "dateModified":"2026-11-09",
+  "author":{"@type":"Organization","name":"automatiserPME"},
+  "publisher":{"@type":"Organization","name":"automatiserPME"},
+  "inLanguage":"fr-FR",
+  "mainEntityOfPage":"https://automatiserpme.vercel.app/n8n-vs-make-pme.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"n8n est-il vraiment gratuit ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Oui en auto-hébergé (Community Edition), à condition de disposer d'un serveur et de savoir le maintenir. La version hébergée par n8n démarre à 20 €/mois facturés à l'année."}},
+    {"@type":"Question","name":"Make revient-il plus cher que n8n ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Pas toujours. Pour peu d'automatisations simples, Make peut rester gratuit ou peu cher. La facture Make grimpe surtout quand les scénarios ont beaucoup d'étapes ou tournent souvent, là où n8n garde un coût stable car il facture à l'exécution."}},
+    {"@type":"Question","name":"Lequel est le plus adapté à une PME française ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Les deux fonctionnent en France. n8n a l'avantage décisif de l'auto-hébergement pour le RGPD. Make a l'avantage de la simplicité pour une équipe non technique."}},
+    {"@type":"Question","name":"Peut-on migrer de Make vers n8n plus tard ?",
+     "acceptedAnswer":{"@type":"Answer","text":"Oui, mais il faut reconstruire les scénarios : il n'y a pas d'import automatique. Mieux vaut choisir en fonction de votre trajectoire de volume dès le départ."}}
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <div class="logo">automatiser<span>PME</span></div>
+  <nav><a href="/">Accueil</a><a href="/n8n-vs-make-pme.html">n8n vs Make</a></nav>
+</div></header>
+
+<main>
+  <h1>n8n vs Make pour une PME : lequel choisir en 2026 ?</h1>
+  <div class="meta">Mis à jour le 9 novembre 2026 · Chiffres relevés sur les pages officielles de Make et n8n</div>
+
+  <div class="lede">
+    <strong>Réponse courte :</strong> pour une PME, Make est le plus simple à prendre en main et convient si vous voulez automatiser vite sans compétence technique. n8n devient plus intéressant dès que le volume grimpe ou que la confidentialité des données compte, parce qu'il se facture à l'exécution (et non à chaque action) et qu'il peut s'héberger en Europe sur votre propre serveur, ce qui règle la question RGPD. Le point de bascule financier arrive vite : un scénario qui enchaîne beaucoup d'étapes coûte cher chez Make, et reste au même prix chez n8n.
+  </div>
+
+  <p>Ce comparatif s'adresse à une PME qui veut un choix clair, pas une liste de fonctionnalités. Les chiffres ci-dessous ont été relevés sur les pages officielles des deux éditeurs en novembre 2026.</p>
+
+  <h2>Le tableau comparatif (l'essentiel)</h2>
+  <table>
+    <tr><th>Critère</th><th>Make</th><th>n8n</th></tr>
+    <tr><td>Modèle de facturation</td><td>Aux crédits (chaque action consomme un crédit)</td><td>À l'exécution de workflow (peu importe le nombre d'étapes)</td></tr>
+    <tr><td>Entrée de gamme</td><td>Offre gratuite puis plans payants aux crédits</td><td>Starter 20 €/mois (facturé à l'année), 2 500 exécutions</td></tr>
+    <tr><td>Hébergement en Europe</td><td>Choix datacenter UE ou US</td><td>Oui, et surtout auto-hébergement possible (données 100 % chez vous)</td></tr>
+    <tr><td>Version gratuite auto-hébergée</td><td>Non</td><td>Oui (Community Edition, gratuite)</td></tr>
+    <tr><td>Prise en main</td><td>Très visuelle, accessible à un non-technique</td><td>Plus exigeante, logique proche du développement</td></tr>
+    <tr><td>Idéal pour</td><td>Démarrer vite, petits volumes, équipe non-technique</td><td>Volumes qui montent, besoin RGPD fort, workflows complexes</td></tr>
+  </table>
+
+  <h2>Le vrai sujet pour une PME : comment chacun facture</h2>
+  <p>C'est là que la facture dérape ou reste maîtrisée, et personne ne l'explique clairement.</p>
+  <p><strong>Make facture aux crédits.</strong> Depuis août 2026, l'unité de facturation est le crédit : chaque action d'un scénario consomme en général un crédit (lire une donnée, écrire une ligne, mettre à jour une fiche, etc.). Conséquence concrète : un scénario qui lit un e-mail, extrait trois informations, les écrit dans un tableur puis envoie une notification consomme plusieurs crédits à chaque passage. Plus vos automatisations ont d'étapes, plus la note monte.</p>
+  <p><strong>n8n facture à l'exécution de workflow</strong>, quelle que soit sa complexité. Le même scénario à dix étapes compte comme une seule exécution. Leur formule le résume : si ça ne tourne pas, vous ne payez pas. Pour une PME dont les processus sont souvent longs (plusieurs étapes enchaînées), ce modèle devient vite plus économique.</p>
+  <div class="callout"><strong>Le point de bascule :</strong> tant que vous avez peu d'automatisations simples, Make reste confortable et gratuit à l'entrée. Dès que vous multipliez les étapes ou la fréquence, n8n reprend l'avantage sur le coût.</div>
+
+  <h2>RGPD et données : l'argument qui tranche pour certaines PME</h2>
+  <p>Si vous traitez des données clients, fournisseurs ou RH sensibles, la localisation des données compte.</p>
+  <ul>
+    <li><strong>Make</strong> permet de choisir un datacenter européen, ce qui couvre déjà beaucoup de besoins.</li>
+    <li><strong>n8n</strong> va plus loin : en auto-hébergement (Community Edition gratuite), vos données ne transitent jamais par l'éditeur. Vous gardez la main totale, l'argument le plus solide face à une obligation RGPD stricte. En contrepartie, l'auto-hébergement demande une compétence technique (un serveur, des mises à jour).</li>
+  </ul>
+  <p>Règle simple : pas de contrainte RGPD forte et pas d'équipe technique, Make suffit. Contrainte forte ou volonté de tout garder en interne, n8n auto-hébergé est la meilleure réponse du marché.</p>
+
+  <h2>Courbe d'apprentissage</h2>
+  <p>Make est pensé pour être visuel et intuitif : une PME sans développeur produit ses premiers scénarios en quelques heures. n8n demande un peu plus : sa logique est plus proche de la programmation, ce qui le rend plus puissant mais moins immédiat. Si personne dans l'équipe n'est à l'aise avec la technique, ce critère pèse lourd.</p>
+
+  <h2>Verdict par profil de PME</h2>
+  <ul>
+    <li><strong>PME sans compétence technique, qui veut démarrer vite :</strong> Make. Simplicité et offre d'entrée gratuite.</li>
+    <li><strong>PME avec des volumes qui montent ou des workflows à nombreuses étapes :</strong> n8n, pour le modèle de facturation à l'exécution.</li>
+    <li><strong>PME avec contrainte RGPD forte (santé, données sensibles) :</strong> n8n auto-hébergé, données 100 % maîtrisées.</li>
+    <li><strong>PME industrielle avec processus longs (supply, achats, stocks) :</strong> n8n, car ces processus enchaînent beaucoup d'étapes et le coût reste stable.</li>
+  </ul>
+
+  <div class="callout">
+    <p style="margin-bottom:10px"><strong>Vous penchez pour n8n ?</strong> Vous pouvez tester gratuitement (version auto-hébergée) ou démarrer sur l'offre Cloud.</p>
+    <a class="cta" href="https://n8n.io/" rel="sponsored nofollow" target="_blank">Découvrir n8n</a>
+  </div>
+
+  <h2>Questions fréquentes</h2>
+  <h3>n8n est-il vraiment gratuit ?</h3>
+  <p>Oui en auto-hébergé (Community Edition), à condition de disposer d'un serveur et de savoir le maintenir. La version hébergée par n8n démarre à 20 €/mois facturés à l'année.</p>
+  <h3>Make revient-il plus cher que n8n ?</h3>
+  <p>Pas toujours. Pour peu d'automatisations simples, Make peut rester gratuit ou peu cher. La facture Make grimpe surtout quand les scénarios ont beaucoup d'étapes ou tournent souvent, là où n8n garde un coût stable.</p>
+  <h3>Lequel est le plus adapté à une PME française ?</h3>
+  <p>Les deux fonctionnent en France. n8n a l'avantage décisif de l'auto-hébergement pour le RGPD. Make a l'avantage de la simplicité pour une équipe non technique.</p>
+  <h3>Peut-on migrer de Make vers n8n plus tard ?</h3>
+  <p>Oui, mais il faut reconstruire les scénarios : il n'y a pas d'import automatique. Mieux vaut choisir en fonction de votre trajectoire de volume dès le départ.</p>
+
+  <div class="transparence">
+    Transparence : cette page contient des liens partenaires. Si vous souscrivez via l'un d'eux, le site peut percevoir une commission, sans surcoût pour vous. Les prix et modèles de facturation ont été relevés sur les pages officielles de Make et n8n en novembre 2026 et peuvent évoluer.
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <div>© 2026 automatiserPME — comparatifs d'automatisation pour PME</div>
+  <div style="font-size:13px"><a href="/">Accueil</a></div>
+</div></footer>
+</body>
+</html>
