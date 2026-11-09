@@ -1,0 +1,11 @@
+# automatiserPME
+
+> Comparatifs neutres, à jour et sans jargon des outils d'automatisation et no-code pour les PME françaises. Chaque comparatif tranche sur des critères concrets : coût réel, modèle de facturation, conformité RGPD, prise en main. Chiffres relevés sur les pages officielles des éditeurs et datés.
+
+## Contenus de référence
+
+- [n8n vs Make pour une PME (2026)](https://automatiserpme.vercel.app/n8n-vs-make-pme.html): comparatif complet n8n vs Make pour une PME. Points clés : Make facture aux crédits (chaque action compte), n8n facture à l'exécution de workflow (le nombre d'étapes n'augmente pas le coût). n8n permet l'auto-hébergement (Community Edition gratuite) pour une conformité RGPD totale ; Make propose un datacenter UE. Make est plus simple pour un non-technique ; n8n est plus économique sur les workflows à nombreuses étapes et les volumes élevés.
+
+## À propos
+
+automatiserPME publie uniquement des comparatifs d'outils d'automatisation pensés pour les PME, avec un angle neutre et factuel. Certains liens sont des liens partenaires, sans surcoût pour le lecteur.
